@@ -1,0 +1,349 @@
+.navbar{
+    margin-top:0px;
+    height: 80px;
+    width: 100%;
+    background-color: #1c55ac;
+    padding-top: 0px;
+    position: fixed;
+    z-index: 1030;
+}
+#phonenobtn1{
+text-decoration: none;
+height: 60px;
+width: 300px;
+margin-left: 100px;
+border-radius: 50px;
+margin-top:7px;
+border-style: none;
+background-color:#1c55ac;
+cursor: pointer;
+transition: .5s ease;
+border-color: #27b5f5;
+font-size: 26px;
+color: #27b5f5;
+
+}
+#phonenobtn1:hover{
+height: 62px;
+width: 302px;
+color: white;
+}
+#callicon{
+    height: 40px;
+    width: 40px;
+ margin-top:-5px;
+position: absolute;
+margin-left:-45px;
+}
+/* #phonenobtn2{
+    text-decoration: none;
+    height: 40px;
+    width: 0px;
+    margin-left:-60px;
+    border-radius: 50px;
+    margin-top:7px;
+    border-style: none;
+    background-color:#1c55ac;
+    cursor: pointer;
+    transition: .5s ease;
+    border-color: #27b5f5;
+    font-size: 26px;
+    color: #27b5f5;
+    
+    }
+    #phonenobtn2:hover{
+    height: 42px;
+    width: 1px;
+    color: white;
+    }
+    .slash{
+        display: inline;
+        padding-right: 10px; 
+    }
+    .slash:not(:hover){
+        color: #27b5f5;
+    }
+   .slash:hover{
+color: #27b5f5;
+   }  */
+   .logo-class{
+       display:flex;
+       position: absolute;
+       margin-top:0px;
+       width:90%;
+       height:300px;
+      
+   }
+   #hospital-name{
+       margin-top: -20px;
+position:relative;
+border: 0px black solid;
+border-radius:490px;
+margin-left: -20px;
+   }
+   .logo-class h3{
+       margin-top:100px;
+       font-size: 25px;
+       color:#1c55ac;
+   }
+   /* .logo-class h4{
+    margin-top:140px;
+    font-size: 25px;
+    color:#a7a6a6;
+    position: absolute;
+    margin-left:300px;
+} */
+#care-logo{
+    margin-top: 50px;
+}
+
+@media only screen and (max-width:400px){
+    .navbar{
+        width: 100%;
+        height: 150px;
+    text-align: center;
+    overflow: hidden; 
+    z-index: 1030;
+    }
+   
+}
+@media only screen and (max-width:400px){
+    #Side-Toggle-Bar{
+top:-250px;
+height:12.5%;
+
+    }
+
+    .dropdown .dropdown-content{
+        width: 420px;
+        overflow: auto;
+        right: -47px;
+        /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+        z-index: 1;
+    margin-top: -5px;
+    padding: 2px;
+   
+    }
+    #dropbtn{
+margin-right: -30px;
+
+    }
+    .dropbtn:hover, .dropbtn:focus {
+        background-color: #2980B9;
+      }
+}
+
+
+
+@media screen and (max-width:400px){
+    .logo-class{
+        margin-top:280px;
+    }
+  
+}
+@media screen and (max-width:400px){
+    .logo-class h4{
+        margin-top:230px;
+        display: block;
+        margin-left:290px;
+    }
+  
+}
+/* @media screen and (max-width:400px){
+    .navbar #phonenobtn2{
+        display: block;
+        margin-left:70px;
+        font-size: 35px;
+       
+    }
+  
+} */
+@media screen and (max-width:400px){
+    .navbar #phonenobtn1{
+        display: block;
+        margin-left:40px;
+        font-size: 35px;
+       
+    }
+  
+}
+@media screen and (max-width:400px){
+     #hospital-name{
+        margin-left:20px;
+        margin-top:-130px;
+       
+    }
+  
+}
+@media screen and (max-width:400px){
+    .logo-class h3{
+        margin-left:-220px;
+       display: block;
+       margin-top:180px ;
+    }
+  
+ }
+/* @media screen and (max-width:400px){
+     h4{
+        margin-left:85px;
+       display: block;
+       margin-top:300px ;
+    }
+  
+}  */
+@media screen and (max-width:400px){
+    #silver-jubilee{
+    
+       display: none;
+    }
+  
+}
+@media screen and (max-width:400px){
+    #care-logo{
+        display: none;
+    }
+}
+
+
+  .dropbtn {
+    /* background-color: #dcdcdc; */
+    border: none;
+    cursor: pointer;
+    margin-right:-20px;
+    height:60px;
+    width: 60px;
+    margin-top: 0px;
+   
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
+  
+ 
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    /* display: inline-block; */
+    float: right;
+    margin-right: 30px;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #dcdcdc;
+    width: 1600px;
+    overflow: auto;
+    right: -30px;
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+    z-index: 1;
+margin-top: -5px;
+   
+  }
+  
+  
+  /* Links inside the dropdown */
+  .dropdown-content Link {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 25px;
+    width: 100px;
+    margin-left: 10px;
+    
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content Link:hover {background-color: #ddd}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+
+  
+
+  .Side-Toggle-Bar{
+    background-color: #dcdcdc;
+    width: 100%;
+    height:11%;
+    position: absolute;
+    margin-top: 300px;
+    overflow: visible
+}
+
+.carousel-control-prev-icon,.carousel-control-next-icon{
+    background-color:#333;
+  }
+  .carousel{
+      margin-top: 400px;
+      width:1550px;
+      margin-left:15px;
+     
+  }
+  #img1{
+      height:600px
+  }
+  #img2{
+    height:600px
+}
+#img3{
+    height:600px
+}
+ /* #img1{
+     position: relative;
+    margin-top: 500px;
+} */
+/* .Cards{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    
+}
+
+ .Cards > div{
+
+background-color: aqua;
+  margin-top: 100px;
+  padding:50px;
+  margin-bottom: 100px;
+  
+ }  */
+ .card{
+     margin-top: 20px;
+     float: right;
+    margin-right: 30px;
+    cursor: pointer;
+    
+ }
+
+ .card-body{
+  height: 300px;
+       width:350px;
+     box-shadow:  5px -5px 10px 0px #EAE479;
+     background-color: #27b5f5;
+ }
+ #tele-icon{
+     width: 100px;
+     height: 100px;
+ }
+ .card-body:hover{
+    background-color:#1c55ac;
+ }
+ .card-body:hover #tele-icon{
+     color: white;
+ }
+ .card-body:hover #tele-link{
+    color: white;
+}
+ .fas{
+margin-left: 70px;
+margin-top:40px;
+ }
+
+ /* .Cards>div:first-child {
+    flex: 0 1 100%;
+  }
+  */
