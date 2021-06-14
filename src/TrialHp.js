@@ -7,15 +7,32 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 
 class TrialHp extends React.Component {
-
+ 
   /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
   myFunction = () => {
     document.getElementById("myDropdown").classList.toggle("show");
 
   }
-
   // Close the dropdown menu if the user clicks outside of it
+    
+ 
+ Register=()=>{
+  document.getElementById("log-in").style.left="-400px";
+  document.getElementById("register").style.left="50px"; 
+  document.getElementById("btn").style.left="110px";
+// x.style.left="-400px";
+// y.style.left="50px";
+// z.style.left="110px";
+}
+ LogIn=()=>{
+  document.getElementById("log-in").style.left="50px";
+  document.getElementById("register").style.left="450px"; 
+  document.getElementById("btn").style.left="0px";
+// x.style.left="50px";
+// y.style.left="450px";
+// z.style.left="0px";
+}
 
   if() {
     var dropdowns = document.getElementsByClassName("dropdown-content");
@@ -111,7 +128,163 @@ toggle between hiding and showing the dropdown content */
           </button>
         </div>
 
-        {/* <div class="Cards">
+
+<div id="cardss">
+  
+        <div class="card" width= "100px">
+  <div class="card-body">
+  <Link style={{textDecoration:"none", color:"black"}} to="/TeleConsultation" class="card-link"> <i class="fas fa-laptop-medical fa-5x" id="tele-icon"></i><h5 id="tele-link" style={{display:"block", marginTop:"-10px", marginLeft:"10px"}}>TELE-CONSULTATION</h5></Link>
+  </div>
+</div>
+
+<div class="card" width= "100px">
+  <div class="card-body">
+  <Link style={{textDecoration:"none", color:"black"}} to="/RoomCategories" class="card-link"> <i class="fas fa-clinic-medical fa-5x" id="room-icon"></i><h5 id="room-link" style={{display:"block", marginTop:"-10px", marginLeft:"20px"}}>ROOM-CATEGORIES</h5></Link>
+  </div>
+</div>
+
+<div class="card" width= "100px">
+  <div class="card-body">
+  <Link style={{textDecoration:"none", color:"black"}} to="/InpatientGuide" class="card-link"> <i class="fas fa-hospital-user fa-5x" id="guide-icon"></i><h5 id="guide-link" style={{display:"block", marginTop:"-10px", marginLeft:"30px"}}>INPATIENT-GUIDE</h5></Link>
+  </div>
+</div>
+<div class="card" width= "100px">
+  <div class="card-body">
+  <Link style={{textDecoration:"none", color:"black"}} to="/Query" class="card-link"> <i class="fas fa-question-circle fa-5x" id="query-icon"></i><h5 id="query-link" style={{display:"block", marginTop:"-10px", marginLeft:"40px"}}>POST-A-QUERY</h5></Link>
+  </div>
+</div>
+
+<div class="card" width= "100px">
+  <div class="card-body">
+  <Link style={{textDecoration:"none", color:"black"}} to="/HealthInsurance" class="card-link"> <i class="fas fa-heartbeat fa-5x" id="insurance-icon"></i><h5 id="insurance-link" style={{display:"block", marginTop:"-10px", marginLeft:"10px"}}>HEALTH-INSURANCE</h5></Link>
+  </div>
+</div>
+
+<div class="card" width= "100px">
+  <div class="card-body">
+  <Link style={{textDecoration:"none", color:"black"}} to="/CLINICS" class="card-link"> <i class="fas fa-hospital-symbol fa-5x" id="clinics-icon"></i><h5 id="clinics-link" style={{display:"block", marginTop:"-10px", marginLeft:"60px"}}>CLINICS</h5></Link>
+  </div>
+</div>
+
+<div class="card" width= "100px">
+  <div class="card-body">
+  <Link style={{textDecoration:"none", color:"black"}} to="/WellnessCentre" class="card-link"> <i class="fas fa-shoe-prints fa-5x" id="wellness-icon"></i><h5 id="wellness-link" style={{display:"block", marginTop:"-10px", marginLeft:"20px"}}>WELLNESS-CENTRE</h5></Link>
+  </div>
+</div>
+
+
+<div class="card" width= "100px">
+  <div class="card-body">
+  <Link style={{textDecoration:"none", color:"black"}} to="/OurDoctors" class="card-link"> <i class="fas fa-user-md fa-5x" id="doctor-icon"></i><h5 id="doctor-link" style={{display:"block", marginTop:"-10px", marginLeft:"30px"}}>OUR-DOCTORS</h5></Link>
+  </div>
+</div>
+      </div>
+
+      <div class="container">
+  <form>
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">Full Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="fullname" placeholder="Your name.." required/>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Age</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="Age" placeholder="Your Age.." required/>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="country">Phone Number</label>
+    </div>
+    <div class="col-25">
+    <input type="text" id="lname" name="PhoneNo" placeholder="Your Phone no.." required/>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="email">Email-Id</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="email-id" name="email-id" placeholder="Your email-id.." required/>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="Gender">Gender</label>
+    </div>
+    <div class="col-75">
+     <p> Male</p><input type="radio" id="male" name="genderselect"/>
+      <p>Female</p><input type="radio" id="female" name="genderselect" />
+      <p>Other</p><input type="radio" id="other" name="genderselect"/>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="Speciality">Speciality</label>
+    </div>
+    <div class="col-75">
+    <select id="Speciality" name="Speciality">
+      <option selected disabled>SELECT--CATEGORY</option>
+        <option value="ENT">ENT</option>
+        <option value="NEUROLOGY">NEUROLOGY</option>
+        <option value="MENTAL HEALTH">MENTAL HEALTH</option>
+      </select>
+    </div>
+  </div>
+
+
+
+  <div class="row">
+    <div class="col-25">
+      <label for="appointment">Appointment Date</label>
+    </div>
+    <div class="col-75">
+      <input type="date" id="appointment" name="email-id" required/>
+    </div>
+  </div>
+
+
+
+  <div class="row">
+    <div class="col-25">
+      <label for="subject">Symptoms</label>
+    </div>
+    <div class="col-75">
+      <textarea id="symptoms" name="symptoms" placeholder="Write something.." style={{height:"200px"}}></textarea>
+    </div>
+  </div>
+  <div class="row">
+    <input type="submit" value="BOOK AN APPOINTMENT"/>
+  </div>
+  </form>
+</div>
+
+<div class="Login/Register">
+  
+  <Link to="DoctorLoginRegister"><input type="checkbox" id="cb1" /><label for="cb1" id="lcb1">Doctor Login/Registration</label></Link>
+  <Link to="PatientLoginRegister"><input type="checkbox" id="cb2" /><label for="cb1" id="lcb2">Patient Login/Registration</label></Link>
+    
+  </div>
+</div>
+    );
+  }
+}
+
+
+export default TrialHp;
+
+
+
+ {/* <Link style={{textDecoration:"none"}} to="/TeleConsultation" class="card-link"><img src="https://t3.ftcdn.net/jpg/04/08/33/12/360_F_408331285_zZaUmE6irZczInvZY0t7uBORBirGPVxE.jpg" width="334px" height="300px" id="tele-icon"/><h3>TELE-CONSULTATION</h3></Link> */}
+    {/* <a href="#" class="card-link">Another link</a> */}
+
+         {/* <div class="Cards">
 
           <div id="Teleconsultation"  height="50px"
     width="100px">
@@ -147,23 +320,17 @@ toggle between hiding and showing the dropdown content */
             Doctors
     </div> */}
 
-        {/* </div> */}
 
-
-
-        <div class="card" width= "100px">
-  <div class="card-body">
-  <Link style={{textDecoration:"none", color:"black"}} to="/TeleConsultation" class="card-link"> <i class="fas fa-laptop-medical fa-9x" id="tele-icon"></i><h3 id="tele-link" style={{display:"block", marginTop:"50px", marginLeft:"20px"}}>TELE-CONSULTATION</h3></Link>
-    {/* <Link style={{textDecoration:"none"}} to="/TeleConsultation" class="card-link"><img src="https://t3.ftcdn.net/jpg/04/08/33/12/360_F_408331285_zZaUmE6irZczInvZY0t7uBORBirGPVxE.jpg" width="334px" height="300px" id="tele-icon"/><h3>TELE-CONSULTATION</h3></Link> */}
-    {/* <a href="#" class="card-link">Another link</a> */}
-  </div>
-</div>
-      </div>
-
-
-    );
-  }
-}
-
-
-export default TrialHp;
+//     <div class="appointment">
+//   <div class="form-fields">
+//       <div class="form-floating mb-3">
+//   <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"/>
+//   <label for="floatingInput">Email address</label>
+// </div>
+// <div class="form-floating">
+//   <input type="password" class="form-control" id="floatingPassword" placeholder="Password"/>
+//   <label for="floatingPassword">Password</label>
+// </div>
+// <button type="submit" class="btn btn-primary">Submit</button>
+//       </div>
+//       </div>

@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import './HomePage.css';
 import './ContactUs.css';
+
 import App from './App';
 import './TrialHp.css';
 import reportWebVitals from './reportWebVitals';
@@ -17,7 +18,7 @@ import AboutUs from './AboutUs';
 import ContactUs from './ContactUs';
 import TrialHp from './TrialHp';
 import 'bootstrap/dist/css/bootstrap.min.css'
-
+import DoctorLoginRegister from './DoctorLoginRegister';
 ReactDOM.render(
   <div>
    {/* <React.StrictMode>
@@ -32,7 +33,7 @@ ReactDOM.render(
           <Route exact path="/Speciality" component={Speciality}/>
           <Route exact path="/Pathology" component={Pathology}/>
           <Route exact path="/TeleConsultation" component={TeleConsultation}/>
-
+          <Route exact path="/DoctorLoginRegister" component={DoctorLoginRegister}/>
 	      </Switch>
       </Router>
    

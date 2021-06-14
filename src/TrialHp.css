@@ -258,7 +258,7 @@ margin-top: -5px;
   }
   
   /* Change color of dropdown links on hover */
-  .dropdown-content Link:hover {background-color: #ddd}
+  .dropdown-content Link:hover {background-color: #ddd;}
   
   /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
   .show {display:block;}
@@ -311,31 +311,76 @@ background-color: aqua;
   margin-bottom: 100px;
   
  }  */
+ /* html{
+     background-color:#dcdcdc;  
+ } */
+ #cardss{
+     margin-right:11px;
+ }
  .card{
      margin-top: 20px;
      float: right;
     margin-right: 30px;
     cursor: pointer;
-    
- }
+  margin-left:110px;
+
+}
+
 
  .card-body{
-  height: 300px;
-       width:350px;
+  height: 200px;
+       width:250px;
      box-shadow:  5px -5px 10px 0px #EAE479;
      background-color: #27b5f5;
+    
  }
  #tele-icon{
      width: 100px;
      height: 100px;
+     margin-left: 60px;
  }
+ #room-icon{
+    width: 100px;
+    height: 100px;
+    margin-left: 60px;
+}
+#guide-icon{
+    width: 100px;
+    height: 100px;
+    margin-left: 60px;
+}
+#query-icon{
+    width: 100px;
+    height: 100px;
+    margin-left: 60px;
+}
+#insurance-icon{
+    width: 100px;
+    height: 100px;
+    margin-left: 60px;
+}
+#clinics-icon{
+    width: 100px;
+    height: 100px;
+    margin-left: 60px;
+}
+#wellness-icon{
+    width: 100px;
+    height: 100px;
+    margin-left: 60px;  
+}
+#doctor-icon{
+    width: 100px;
+    height: 100px;
+    margin-left: 60px;  
+}
  .card-body:hover{
     background-color:#1c55ac;
  }
- .card-body:hover #tele-icon{
+ .card-body:hover #tele-icon:hover,#insurance-icon:hover,#query-icon:hover,#guide-icon:hover,#room-icon:hover,#clinics-icon:hover,#wellness-icon:hover,#doctor-icon:hover{
      color: white;
  }
- .card-body:hover #tele-link{
+ .card-body:hover #tele-link:hover,#insurance-link:hover,#query-link:hover,#guide-link:hover,#room-link:hover,#clinics-link:hover,#wellness-link:hover,#doctor-link:hover{
     color: white;
 }
  .fas{
@@ -347,3 +392,162 @@ margin-top:40px;
     flex: 0 1 100%;
   }
   */
+
+
+  .container input[type=text], select, textarea,input[type=email], input[type=date]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+   
+  
+  }
+  
+  
+  input[type=radio]{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width:100px;
+ height: 20px;
+  }
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    color:#1c55ac;
+    font-weight: bold;
+    font-size: 25px;
+  }
+  p{
+     display: inline;
+     font-size: 18px;
+  }
+ .container input[type=submit] {
+    background-color: #27b5f5;
+    color: white;
+    padding: 11px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .container input[type=submit]:hover {
+    background-color:#1c55ac;
+  }
+  
+  .container {
+      margin-top: 500px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.9);
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+
+.appointment{
+    margin-top:500px;
+}
+.form-fields{
+   text-align: center;
+
+}
+.appointment input[type=email], input[type=password]{
+    width: 400px;
+    height: 50px;
+}
+
+
+/* html {
+    box-sizing: border-box;
+    height: 100%;
+    font-size: 10px;
+  } */
+  /* *, *::before, *::after {
+    box-sizing: inherit;
+
+  } */
+  /* body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #57bd84;
+  }*/
+  #cb1,#cb2 { 
+    height: 0;
+    width: 10px;
+    visibility: hidden;
+    margin-left: 250px;
+    margin-top: 200px;
+  }
+#cb1:checked,#cb2:checked + #lcb1:after,#lcb2:after {
+    transform: scale(4.2);
+  }
+  #lcb1,#lcb2 {
+    outline: none;
+    user-select: none;
+    color: #ccc;
+    font-family: 'Lato', sans-serif;
+    font-size:25px;
+    letter-spacing: 0.04rem;
+    padding: 1.5rem 3rem; 
+    cursor: pointer;
+    border-radius: 0.4rem;
+    border: 1px solid #000;
+    background: #1c55ac;
+    position: relative; 
+    overflow: hidden;
+    box-shadow: 0 3px 0 0 #EAE479;
+  }
+  #lcb1::after,#lcb2::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transition: transform 0.3s ease-in;
+    mix-blend-mode: difference;
+    background: radial-gradient(circle at center, #fff 24%, #000 25%, #000 100%);
+    box-shadow:  5px -5px 10px 0px #EAE479;
+  }
+  #lcb1:active,#lcb2:active {
+    top: 3px;
+    box-shadow: none;
+  }
+  #lcb1:hover,#lcb2:hover{
+    background-color: #27b5f5;
+    color: white;
+  }
+  
