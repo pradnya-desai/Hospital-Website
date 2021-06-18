@@ -188,7 +188,7 @@ toggle between hiding and showing the dropdown content */
 
       <h2 style={{fontSize:"40px",fontFamily:"sans-serif",display:"block"}}><i class="fas fa-calendar-check fa-2x"></i>APPOINTMENT BOOKING</h2>
 
-
+<div id="Form-Back-Image"></div>
       <div class="container">
   <form>
   <div class="row">
@@ -275,12 +275,14 @@ toggle between hiding and showing the dropdown content */
 </div>
 
 <h2 style={{fontSize:"40px",fontFamily:"sans-serif",display:"block"}}><i class="fas fa-sign-in-alt fa-2x"></i>LOGIN/REGISTER</h2>
+<div id="Login-Register-Image"></div>
 <div class="Login-Register">
   
   <Link to="DoctorLoginRegister"><input type="checkbox" id="cb1" /><label for="cb1" id="lcb1">Doctor Login/Registration</label></Link>
   <Link to="PatientLoginRegister"><input type="checkbox" id="cb2" /><label for="cb1" id="lcb2">Patient Login/Registration</label></Link>
     
   </div>
+  <h2 style={{fontSize:"40px",fontFamily:"sans-serif",display:"block",marginTop:"40px"}}><i class="fas fa-comments fa-2x"></i>PATIENT TESTIMONIALS</h2>
 
   <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
@@ -295,7 +297,7 @@ toggle between hiding and showing the dropdown content */
 
   </div>
 
-  <div style={{marginTop:"-300px"}} class="carousel-inner">
+  <div style={{marginTop:"-360px"}} class="carousel-inner">
     <div class="carousel-item active">
       <h1 style={{height:"400px"}}><img style={{height:"100px", width:"100px", marginLeft:"20px"}} src="https://png.pngtree.com/svg/20151203/double_quote_left__531807.png"/>
       <img style={{height:"100px", width:"100px", marginLeft:"1320px", transform:"rotate(180deg)"}} src="https://png.pngtree.com/svg/20151203/double_quote_left__531807.png"/></h1>
