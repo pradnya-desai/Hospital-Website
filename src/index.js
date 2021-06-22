@@ -20,6 +20,7 @@ import TrialHp from './TrialHp';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import DoctorLoginRegister from './DoctorLoginRegister';
 import PatientLoginRegister from './PatientLoginRegister';
+
 ReactDOM.render(
   <div>
    {/* <React.StrictMode>
@@ -36,6 +37,7 @@ ReactDOM.render(
           <Route exact path="/TeleConsultation" component={TeleConsultation}/>
           <Route exact path="/DoctorLoginRegister" component={DoctorLoginRegister}/>
           <Route exact path="/PatientLoginRegister" component={PatientLoginRegister}/>
+		      
 
 	      </Switch>
       </Router>

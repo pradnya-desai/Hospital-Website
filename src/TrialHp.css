@@ -1,3 +1,5 @@
+
+
 .navbar{
     margin-top:0px;
     height: 80px;
@@ -21,8 +23,8 @@ transition: .5s ease;
 border-color: #27b5f5;
 font-size: 26px;
 color: #27b5f5;
-
 }
+
 #phonenobtn1:hover{
 height: 62px;
 width: 302px;
@@ -331,7 +333,7 @@ background-color: aqua;
   height: 200px;
        width:250px;
      box-shadow:  5px -5px 10px 0px #EAE479;
-     background-color: #27b5f5;
+     background-color: #dcdcdc;
     
  }
  #tele-icon{
@@ -414,7 +416,7 @@ margin-top:40px;
   label {
     padding: 12px 12px 12px 0;
     display: inline-block;
-    color:#1c55ac;
+    color:#dcdcdc;
     font-weight: bold;
     font-size: 25px;
   }
@@ -423,8 +425,8 @@ margin-top:40px;
      font-size: 18px;
   }
  .container input[type=submit] {
-    background-color: #27b5f5;
-    color: white;
+    background-color: #dcdcdc;
+    color:#1c55ac;
     padding: 11px 20px;
     border: none;
     border-radius: 4px;
@@ -432,6 +434,9 @@ margin-top:40px;
     float: right;
     font-weight: bold;
     font-size: 20px;
+    width: 98.4%;
+    margin-left: 11px;
+    margin-top: 12px;
   }
   
   .container input[type=submit]:hover {
@@ -439,11 +444,21 @@ margin-top:40px;
   }
   
   .container {
-      margin-top:20px;
+    background-color: #1c55ac;
+      margin-top:-1120px;
     border-radius: 5px;
-    background-color: #f2f2f2;
+    position: relative;
     padding: 20px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.9);
+    box-shadow:0px 8px 16px 0px rgba(234	,228,	121);
+  }
+  #Form-Back-Image{
+    /* https://static.vecteezy.com/system/resources/previews/001/954/184/non_2x/medical-doctor-with-a-stethoscope-isolated-on-gray-background-free-photo.jpg */
+    background-image: url();
+  background-size: cover;
+  filter: blur(6px);
+  opacity: 0.7;
+  height: 1130px;
+  width: auto;
   }
   
   .col-25 {
@@ -503,10 +518,16 @@ margin-top:40px;
     min-height: 100vh;
     background: #57bd84;
   }*/
-  .Login-Register{
-margin-top: -30px;
-background-image: 
+  #Login-Register-Image{
+    height: 300px;
+    filter: blur(3px);
+    opacity:0.9;
+    background-image: 
 url(https://img.freepik.com/free-vector/people-protective-hazmat-suits-carrying-barrels-with-warning-sign-flu-outbreak-china-pathogen-respiratory-quarantine-coronavirus-concept-hospital-interior-horizontal_48369-23066.jpg?size=626&ext=jpg);
+  }
+  .Login-Register{
+margin-top: -290px;
+height: 250px;
   }
   #cb1,#cb2 { 
     height: 0;
@@ -532,7 +553,7 @@ url(https://img.freepik.com/free-vector/people-protective-hazmat-suits-carrying-
     background: #1c55ac;
     position: relative; 
     overflow: hidden;
-    box-shadow: 0 3px 0 0 #EAE479;
+    box-shadow:0px 8px 16px 0px rgba(234	,228,	121);
   }
   #lcb1::after,#lcb2::after {
     content: '';
@@ -545,7 +566,7 @@ url(https://img.freepik.com/free-vector/people-protective-hazmat-suits-carrying-
     transition: transform 0.3s ease-in;
     mix-blend-mode: difference;
     background: radial-gradient(circle at center, #fff 24%, #000 25%, #000 100%);
-    box-shadow:  5px -5px 10px 0px #EAE479;
+    box-shadow:0px 8px 16px 0px rgba(234	,228,	121);
   }
   #lcb1:active,#lcb2:active {
     top: 3px;
@@ -755,4 +776,19 @@ text-decoration: none;
  margin-left: 90px;
 }
 
-
+#movetotop{
+position: fixed;
+    bottom: 10px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #ffffff;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    width: 105px;
+    height: 105px;
+    box-shadow:-10px 10px 14px 1px gray;
+}

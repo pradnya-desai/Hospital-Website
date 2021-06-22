@@ -131,7 +131,7 @@ toggle between hiding and showing the dropdown content */
           </button>
         </div>
 
-<h2 style={{fontSize:"40px",fontFamily:"sans-serif",display:"inline-block"}}><i class="fas fa-hand-point-right fa-2x"></i>USEFUL LINKS</h2>
+<h2 style={{fontSize:"40px",fontFamily:"sans-serif",display:"inline-block",textShadow:"-2px -2px #1c55ac"}}><i class="fas fa-hand-point-right fa-2x"></i>USEFUL LINKS</h2>
 
 
 <div id="cardss">
@@ -186,7 +186,7 @@ toggle between hiding and showing the dropdown content */
       </div>
 
 
-      <h2 style={{fontSize:"40px",fontFamily:"sans-serif",display:"block"}}><i class="fas fa-calendar-check fa-2x"></i>APPOINTMENT BOOKING</h2>
+      <h2 style={{fontSize:"40px",fontFamily:"sans-serif",display:"block",textShadow:"-2px -2px #1c55ac"}}><i class="fas fa-calendar-check fa-2x"></i>APPOINTMENT BOOKING</h2>
 
 <div id="Form-Back-Image"></div>
       <div class="container">
@@ -228,9 +228,9 @@ toggle between hiding and showing the dropdown content */
       <label for="Gender">Gender</label>
     </div>
     <div class="col-75">
-     <p> Male</p><input type="radio" id="male" name="genderselect"/>
-      <p>Female</p><input type="radio" id="female" name="genderselect" />
-      <p>Other</p><input type="radio" id="other" name="genderselect"/>
+     <p style={{color:"#dcdcdc"}}><b>MALE</b></p><input type="radio" id="male" name="genderselect"/>
+      <p style={{color:"#dcdcdc"}}><b>FEMALE</b></p><input type="radio" id="female" name="genderselect" />
+      <p style={{color:"#dcdcdc"}}><b>OTHER</b></p><input type="radio" id="other" name="genderselect"/>
     </div>
   </div>
   <div class="row">
@@ -274,7 +274,7 @@ toggle between hiding and showing the dropdown content */
   </form>
 </div>
 
-<h2 style={{fontSize:"40px",fontFamily:"sans-serif",display:"block"}}><i class="fas fa-sign-in-alt fa-2x"></i>LOGIN/REGISTER</h2>
+<h2 style={{fontSize:"40px",fontFamily:"sans-serif",display:"block",textShadow:"-2px -2px #1c55ac"}}><i class="fas fa-sign-in-alt fa-2x"></i>LOGIN/REGISTER</h2>
 <div id="Login-Register-Image"></div>
 <div class="Login-Register">
   
@@ -282,7 +282,7 @@ toggle between hiding and showing the dropdown content */
   <Link to="PatientLoginRegister"><input type="checkbox" id="cb2" /><label for="cb1" id="lcb2">Patient Login/Registration</label></Link>
     
   </div>
-  <h2 style={{fontSize:"40px",fontFamily:"sans-serif",display:"block",marginTop:"40px"}}><i class="fas fa-comments fa-2x"></i>PATIENT TESTIMONIALS</h2>
+  <h2 style={{fontSize:"40px",fontFamily:"sans-serif",display:"block",marginTop:"40px",textShadow:"-2px -2px #1c55ac"}}><i class="fas fa-comments fa-2x"></i>PATIENT TESTIMONIALS</h2>
 
   <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
@@ -517,6 +517,10 @@ toggle between hiding and showing the dropdown content */
             </div>
         </div>
     </footer>
+   
+<button id="movetotop" style={{display:"block"}}><a href="#"><img src="https://image.flaticon.com/icons/png/512/892/892692.png" style={{marginTop:"4%",height:"70px",width:"70px"}}/></a></button>
+  
+  
 </div>
     );
   }
