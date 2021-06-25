@@ -1,0 +1,414 @@
+/* .backhome-doc{
+  height: 250px;
+  width:100%;
+
+  background-image: url(https://img.freepik.com/free-vector/people-protective-hazmat-suits-carrying-barrels-with-warning-sign-flu-outbreak-china-pathogen-respiratory-quarantine-coronavirus-concept-hospital-interior-horizontal_48369-23066.jpg?size=626&ext=jpg);
+  filter: blur(3px);
+
+  position: absolute;
+  margin-top: -19px;
+}
+
+#aboutus-doc{
+  position: relative;
+  margin-top: 100px;
+  margin-left: 50px;
+  opacity: 1;
+}
+
+#abouttext-doc{
+color: black;
+position: absolute;
+margin-top: 70px;
+margin-left: 150px;
+opacity: 1;
+}
+
+#homelink-doc{
+  color: black;
+  position: absolute;
+  margin-top: 50px;
+  text-decoration: none;
+  margin-left: 50px;
+  filter: none;
+  opacity: 1;
+}
+
+#homelink-doc:hover{
+  color: #1c55ac;
+  font-weight: bolder;
+}
+
+#greaterthan-doc{
+  margin-left: 5px;
+} */
+
+.fcorn-register {
+    font-family: "Source Sans Pro";
+    width: 1050px;
+    margin: 0;
+    padding: 10px 35px;
+    background: #1c55ac;
+    /* text-align: center; */
+    border: 1px solid #eee;
+    letter-spacing: 1px;
+    box-shadow: 0 0 2px rgba(60, 60, 60, 0.1);
+    margin-left: 260px;
+   height: 1320px;
+   margin-top:300px;
+  }
+  .fcorn-register p {
+    margin-bottom: 30px;
+  }
+  .fcorn-register p.register-info {
+    background: #b5b5b5;
+    color: #fff;
+    padding: 8px 15px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 30px;
+  }
+  .fcorn-register p > input,
+  .fcorn-register p > select {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 15px;
+    font-weight: 100;
+    color: #686868;
+    border: 1px solid rgba(159, 159, 159, 0.2);
+    box-shadow: 0 0 3px rgba(60, 60, 60, 0.05);
+  }
+  .fcorn-register p > input:focus,
+  .fcorn-register p > select:focus {
+    border: 1px solid #63c6ef;
+    outline: none;
+  }
+  .fcorn-register p > select:focus {
+    border: 1px solid rgba(159, 159, 159, 0.2);
+  }
+    /** To hide default arrow */
+  .fcorn-register p > select {
+    text-indent: 0.01px;   /** if it doesn't work change to something 0.05 etc... **/
+    text-overflow: "";
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  .fcorn-register p > select::-ms-expand {
+    display: none;
+  }
+  .fcorn-register p.city-wrap,
+  .fcorn-register p.country-wrap {
+    position: relative;
+  }
+  .fcorn-register p.city-wrap:before,
+  .fcorn-register p.country-wrap:before {
+      /** For custom arrow in select box **/
+    position: absolute;
+    content: "#";
+    font-family: "entypo";
+    font-size: 18px;
+    color: #686868;
+    top: 10px;
+    right: 25px;
+  }
+  .fcorn-register p > span.extern-type {
+    float: right;
+    text-align: right;
+    font-size: 12px;
+    display: block;
+    color: #b5b5b5;
+  }
+  
+    /** Register Toogle Btn **/
+  .fcorn-register p.register-toggle {
+    position: relative;
+  }
+  .fcorn-register p.register-toggle > .info {
+    font-size: 13px;
+    margin-left: 20px;
+  }
+  .fcorn-register p.register-toggle > label.toggle-label {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    display: inline-block;
+    background: #4cbeed;
+    width: 60px;
+    height: 24px;
+    float: left;
+    position: relative;
+    font-size: 10px;
+    color: #fff;
+  }
+  .fcorn-register p.register-toggle > label.toggle-label > input.toggle-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+    /** this is for labeling of on/off text **/
+  .fcorn-register p.register-toggle > label.toggle-label:before,
+  .fcorn-register p.register-toggle > label.toggle-label:after {
+    position: absolute;
+    top: 30%;
+    line-height: 1.1;
+    font-weight: 100;
+  }
+  .fcorn-register p.register-toggle > label.toggle-label:before {
+    content: attr(data-on);
+    left: 7px;
+  }
+  .fcorn-register p.register-toggle > label.toggle-label:after {
+    content: attr(data-off);
+    right: 7px;
+  }
+    /** handle switch **/
+  .fcorn-register p.register-toggle > label.toggle-label .toggle-handle {
+    position: absolute;
+    background: #fff;
+    left: 0;
+    top: 0;
+    border: 1px solid #4cbeed;
+    display: inline-block;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    box-shadow: inset 0 0 5px rgba(50, 50, 50, 0.1);
+    width: 50%;
+    height: inherit;
+  }
+  .fcorn-register p.register-toggle > label.toggle-label > input.toggle-input:checked ~ .toggle-handle {
+    left: 30px;
+  }
+  
+    /* Register button */
+  .fcorn-register p.register-submit {
+    display: block;
+    /* float: right; */
+  }
+  .fcorn-register p.register-submit > input {
+    border: none;
+    width: 200px;
+    color: #fff;
+    padding: 10px 15px;
+    background: #dcdcdc;
+    text-align: center;
+    letter-spacing: 1px;
+    box-shadow: 0 1px 1px #1daae3;
+    float: left;
+    margin-left:50px;
+   
+  }
+  .fcorn-register p.register-submit > input:focus {
+    border: none;
+    outline: none;
+  }
+  .fcorn-register p.register-submit > input:hover {
+    background: #39b7eb;
+  }
+  .fcorn-register p.register-submit > input:active {
+    box-shadow: inset 0 0 10px #1daae3;
+    -webkit-transform: translate(0, 1px);
+    -ms-transform: translate(0, 1px);
+    transform: translate(0, 1px);
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 50px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay {overflow-y: auto;}
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+  
+  
+  
+  .pulse-button{
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: 400;
+    border: none;
+    box-shadow: 0 0 0 0 #27b5f5;
+    background-color: #1c55ac;
+    cursor: pointer;
+    animation: pulse 2s infinite cubic-bezier(0.66, 0, 0, 1);
+    display: inline;
+  
+  }
+  .centered{
+    position: absolute;
+    margin-top:-110px;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    animation-duration: 2s;
+      animation-timing-function:2s;
+      /* animation-iteration-count:inherit; */
+       animation-name: anim-1;
+      animation-fill-mode: forwards;
+  }
+  
+  @keyframes anim-1{
+    from {
+        top: 0px;
+        }
+      to {
+          top: 300px;
+          }
+    }
+      .pulse-button:hover {
+        animation: none;
+      }
+    @keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+  
+  
+    .login-container-doctor{
+      width: 370px;
+      height: 420px;
+      margin-top: 10%;
+      left: 50%;
+      position: absolute;
+      background: #1c55ac;
+      transform: translate(-50%, -50%);
+      box-sizing: border-box;
+      color: #fff;
+      padding: 40px 20px;
+   
+  
+  }
+  
+  /* .login-container-doctor img{
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      left: calc(50% - 50px);
+      border-radius: 50%;
+      top: -50px;
+      
+  } */
+  
+  /* .login-container-doctor h1{
+      text-align: center;
+      font-size: 20px;
+  } */
+  
+  /* .login-container-doctor #uid,#pid{
+      display: block;
+      color: black;
+  } */
+  
+  .login-container-doctor #udiv,#pdiv{
+      margin-bottom: 20px;
+  }
+  
+  .login-container-doctor #dtext, #ptext{
+      width: 100%;
+      border: none;
+      outline: none;
+      border-bottom: 1px solid #ffff;
+      font-weight: bold;
+      font-size: 20px;
+      background: transparent;
+      color: #fff;
+      height: 40px;
+  }
+  
+  .login-container-doctor #dsubmit{
+      width: 100%;
+      border: none;
+      outline: none;
+      height: 40px;
+      /* background-image: linear-gradient(to right,#F26FC9, #8772EF); */
+      color: #1c55ac;
+      background-color: #dcdcdc;
+    
+  }
+  .login-container-doctor #dsubmit:hover{
+      cursor: pointer;
+      /* color:#dcdcdc; */
+      background-color: #27b5f5;
+  }
+  #fpwd{
+      display: block;
+      text-align: right;
+      text-decoration: none;
+      color: #dcdcdc;
+      font-size: 15px;
+      margin-top: 10px;
+  }
+  
+  #fpwd:hover{
+      color: #d3d3d3;
+      
+  }
+  /* #backbtn{
+      width: 40%;
+      border: none;
+      outline: none;
+      height: 40px;
+      background-image: linear-gradient(to right,#F26FC9, #8772EF);
+      color: #ffff;
+      cursor: pointer;
+      overflow:visible;
+  }
+  #register{
+      margin-left:420px;
+  } */
+  

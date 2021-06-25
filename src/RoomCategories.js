@@ -20,10 +20,10 @@ function RoomCategories(){
 
     return(
         <div>
-            <div class="navbar1">
-          <button type="button" id="phonenobtn11">
+             <div class="navbar">
+          <button type="button" id="phonenobtn1">
             <img
-              id="callicon1"
+              id="callicon"
               src="https://images.vexels.com/media/users/3/137415/isolated/preview/0e475bb9b17b3fa4f94f31fba1635b8f-telephone-call-icon-logo-by-vexels.png"
             />
             020252515151
@@ -35,11 +35,11 @@ function RoomCategories(){
             </div>
             1234567892
           </button> */}
-        </div>
+         </div>  
 
         <div class="backhome"></div>
         <div className="backhome-text">
-            <h3 id="aboutus-room">Room Categories</h3>
+            <h3 id="aboutus">Room Categories</h3>
             <Link to="/" id="homelink"><h3>Home<span id="greaterthan"> {'>'} </span></h3> </Link>
             <h3 id="abouttext">Room Categories</h3>
         </div>

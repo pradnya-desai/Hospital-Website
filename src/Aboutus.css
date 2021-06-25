@@ -1,0 +1,86 @@
+/* .navbar1{
+    margin-top:-100px;
+    height: 80px;
+    width: 100%;
+    background-color: #1c55ac;
+    padding-top: 0px;
+    position: fixed;
+    z-index: 1030;
+  }
+  #phonenobtn11{
+  text-decoration: none;
+  height: 60px;
+  width: 300px;
+  margin-left: 100px;
+  border-radius: 50px;
+  margin-top:7px;
+  border-style: none;
+  background-color:#1c55ac;
+  cursor: pointer;
+  transition: .5s ease;
+  border-color: #27b5f5;
+  font-size: 26px;
+  color: #27b5f5;
+  
+  }
+  #phonenobtn11:hover{
+  height: 62px;
+  width: 302px;
+  color: white;
+  }
+  #callicon1{
+    height: 40px;
+    width: 40px;
+  margin-top:-5px;
+  position: absolute;
+  margin-left:-45px;
+  }
+   */
+  
+  
+  
+  .first{ 
+    display: flex; 
+    flex-direction: row; 
+    margin-top: 100px;
+  }
+  
+  .technology{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .second-technology{
+    display: flex;
+  }
+  .chairman-message{
+    display: flex; 
+    flex-direction: row; 
+    /* margin-top: 200px; */
+  
+  }
+  section div{
+    /* padding: 20px;  */
+    width: 110%;
+  }
+          
+  .second{
+    display: flex; 
+    margin-top: 30px;
+  }
+  
+  #quality-assurance-image{
+    text-align: center;
+  }
+  
+  .quality-assurance-text h1{
+    text-align: center;
+  }
+  
+  .technology-text h1{
+    text-align: center;
+  }
+  
+  .mission-text h1{
+    text-align: center;
+  }

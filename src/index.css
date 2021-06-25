@@ -13,7 +13,90 @@ code {
 }
 
 
+.navbar{
+  margin-top:0px;
+  height: 80px;
+  width: 100%;
+  background-color: #1c55ac;
+  padding-top: 0px;
+  position: fixed;
+  z-index: 1030;
+}
+#phonenobtn1{
+text-decoration: none;
+height: 60px;
+width: 300px;
+margin-left: 100px;
+border-radius: 50px;
+margin-top:7px;
+border-style: none;
+background-color:#1c55ac;
+cursor: pointer;
+transition: .5s ease;
+border-color: #27b5f5;
+font-size: 26px;
+color: #27b5f5;
+}
 
+#phonenobtn1:hover{
+height: 62px;
+width: 302px;
+color: white;
+}
+#callicon{
+  height: 40px;
+  width: 40px;
+margin-top:-5px;
+position: absolute;
+margin-left:-45px;
+}
+ .backhome{
+  height: 250px;
+  width:100%;
 
+  background-image: url(https://img.freepik.com/free-vector/people-protective-hazmat-suits-carrying-barrels-with-warning-sign-flu-outbreak-china-pathogen-respiratory-quarantine-coronavirus-concept-hospital-interior-horizontal_48369-23066.jpg?size=626&ext=jpg);
+  filter: blur(3px);
+
+  position: absolute;
+  margin-top: -19px;
+} 
+
+#aboutus{
+  position: relative;
+  margin-top: 100px;
+  margin-left: 50px;
+  opacity: 1;
+}
+
+#abouttext{
+color: black;
+position: absolute;
+margin-top: 70px;
+margin-left: 150px;
+opacity: 1;
+}
+
+#homelink{
+  color: black;
+  position: absolute;
+  margin-top: 50px;
+  text-decoration: none;
+  margin-left: 50px;
+  filter: none;
+  opacity: 1;
+}
+
+#homelink:hover{
+  color: #1c55ac;
+  font-weight: bolder;
+}
+
+#greaterthan{
+  margin-left: 5px;
+} 
+
+/* .backhome-text Link.active{
+  background: none;
+} */
 
 

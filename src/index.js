@@ -17,9 +17,12 @@ import Speciality from './Speciality';
 import AboutUs from './AboutUs';
 import ContactUs from './ContactUs';
 import TrialHp from './TrialHp';
+import RoomCategories from './RoomCategories';
+
 import 'bootstrap/dist/css/bootstrap.min.css'
 import DoctorLoginRegister from './DoctorLoginRegister';
-import PatientLoginRegister from './PatientLoginRegister';
+//  import DoctorLoginRegister from './DoctorLoginRegister';
+// import PatientLoginRegister from './PatientLoginRegister';
 
 ReactDOM.render(
   <div>
@@ -35,10 +38,8 @@ ReactDOM.render(
           <Route exact path="/Speciality" component={Speciality}/>
           <Route exact path="/Pathology" component={Pathology}/>
           <Route exact path="/TeleConsultation" component={TeleConsultation}/>
+          <Route exact path="/RoomCategories" component={RoomCategories}/>
           <Route exact path="/DoctorLoginRegister" component={DoctorLoginRegister}/>
-          <Route exact path="/PatientLoginRegister" component={PatientLoginRegister}/>
-		      
-
 	      </Switch>
       </Router>
    
