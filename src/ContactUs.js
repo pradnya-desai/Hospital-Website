@@ -35,7 +35,7 @@ class ContactUs extends React.Component{
     <a href="#">ABOUT US</a>
     <a href="#">SPECIALITY</a>
     <a href="#">PATHOLOGY</a>
-    <a href="#">CONSULTATION</a>
+    <a href="#">APPOINTMENT</a>
   </div>
 </div>
 {/* https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHLJXxBqzSchmc_n05a2T_Of-j83Rq5BueuA&usqp=CAU */}

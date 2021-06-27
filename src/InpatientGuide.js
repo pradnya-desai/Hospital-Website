@@ -1,11 +1,18 @@
-import './RoomCategories.css';
 import { Link } from 'react-router-dom'
 import Mailto from 'react-protected-mailto'
-function RoomCategories(){
-    const myFunctionroom = () => {
+import './InpatientGuide.css'
+function InpatientGuide(){
+    const myFunction = () => {
         document.getElementById("myDropdown").classList.toggle("show");
     
       }
+	const openNav=()=> {
+		document.getElementById("myNav").style.height = "100%";
+	  }
+	  
+	  const closeNav=()=> {
+		document.getElementById("myNav").style.height = "0%";
+	  }
 
       if(true) {
         var dropdowns = document.getElementsByClassName("dropdown-content");
@@ -17,10 +24,11 @@ function RoomCategories(){
           }
         }
       }
+return(
 
-    return(
-        <div>
-             <div class="navbar">
+  <div>
+
+<div class="navbar">
           <button type="button" id="phonenobtn1">
             <img
               id="callicon"
@@ -35,64 +43,84 @@ function RoomCategories(){
             </div>
             1234567892
           </button> */}
-         </div>  
-
-        <div class="backhome"></div>
-        <div className="backhome-text">
-            <h3 id="aboutus" style={{marginTop:"20px"}}>Room Categories</h3>
-            <Link to="/" id="homelink"><h3>Home<span id="greaterthan"> {'>'} </span></h3> </Link>
-            <h3 id="abouttext" style={{marginTop:"50px", marginLeft:"170px"}}>Room Categories</h3>
         </div>
 
-         <div class="Side-Toggle-Bar" id="Side-Toggle-Bar" style={{marginTop:"175px"}}>
+		
 
-          <div class="dropdown">
+		<div class="backhome"></div>
+        <div className="backhome-text">
+            <h3 id="aboutus" style={{marginTop:"10px"}}>Inpatient Guide</h3>
+            <Link to="/" id="homelink"><h3>Home  <span id="greaterthan"> {'>'} </span></h3> </Link>
+            <h3 id="abouttext" style={{marginTop:"50px", marginLeft:"170px"}}>Inpatient Guide</h3>
+        </div>
+        {/* <div className="register-text">
+			<h1>Registation Form</h1>
+		</div> */}
 
-            <input type="image" src="https://img.icons8.com/fluent/2x/menu.png" onClick={myFunctionroom} id="dropbtn" class="dropbtn" />
-            <div id="myDropdown" class="dropdown-content">
-           
-              <Link to="/ContactUs" class="active" id="contactus">CONTACT US</Link>
-              <Link to="#" id="aboutuss">ABOUT US</Link>
-              <Link to="#" id="speciality">SPECIALITY</Link>
-              <Link to="#" id="pathology" >PATHOLOGY</Link>
-              <Link to="#" id="consultation">APPOINTMENT</Link>
-            </div>
-          </div>
-        </div> 
-               <div id="rooms">
-        <hr style={{marginTop:"10px",position:"relative"}}></hr>
+<div class="Side-Toggle-Bar" id="Side-Toggle-Bar" style={{marginTop:'185px'}}>
 
-            <div class="room-items">
+<div class="dropdown">
 
-<div id="luxury">Luxury room<br/><h4 style={{lineHeight:"-10"}}>Single centrally air conditioned well furnished accommodation with attached bathroom, sofa-cum-bed for attendant, TV and telephone facilities.</h4><img src="https://www.jehangirhospital.com/images/room-categories/luxury-room.jpg" width="700px" height="500px"/><hr></hr></div>
-<div id="super-delux">Super Delux<br/><h4>Single centrally air conditioned, well-furnished accommodation with attached bathroom, sofa-cum-bed for attendant, central oxygen suction facility, TV, telephone and mini fridge.</h4><img src="https://www.jehangirhospital.com/images/room-categories/super-deluxe.jpg" width="700px" height="500px"/><hr></hr></div>
-<div id="general-ward">General Ward<br/><h4>A dormitory style layout beds. <br/>Each bed has a bed side trolley and common bathroom. There are separate wards for men and women.</h4><img src="https://www.jehangirhospital.com/images/room-categories/general-ward.jpg"width="700px" height="500px"/><hr></hr></div>
-<div id="day-care">Day Care<br/><h4>We have state of the art Day Care facility with nature friendly ambience and attendant sit outs. Treatment is provided on adjustable cozy chairs to make the whole experience feel pain-free.</h4><img src="https://www.jehangirhospital.com/images/room-categories/day-care.jpg" width="700px" height="500px"/><hr></hr></div>
-<div id="emergency">Emergency Room<br/><h4>Cubicles with all essential and advanced life-support equipment necessary for critical care and close monitoring of patients..</h4><img src="https://downloads.healthcatalyst.com/wp-content/uploads/2019/08/Emergency-Department-Throughput.jpg" width="700px" height="500px"/><hr></hr></div>
-<div id="icu">ICU Room<br/><h4>This section of the hospital has cubicles to provide sick patients with the highest level of treatments.</h4><img src="https://www.jehangirhospital.com/images/room-categories/icu-room.jpg" width="700px" height="500px"/><hr></hr></div>
-
+  <input type="image" src="https://img.icons8.com/fluent/2x/menu.png" onClick={myFunction} id="dropbtn" class="dropbtn" />
+  <div id="myDropdown" class="dropdown-content">
+    
+    <Link to="/ContactUs" class="active" id="contactus">CONTACT US</Link>
+    <Link to="/AboutUs" id="aboutuss">ABOUT US</Link>
+    <Link to="#" id="speciality">SPECIALITY</Link>
+    <Link to="#" id="pathology" >PATHOLOGY</Link>
+    <Link to="#" id="consultation">APPOINTMENT</Link>
+  </div>
+</div>
 </div>
 
-            </div>
+<div class="card-patient-guide">
+  <img src="https://amarahospital.com/wp-content/uploads/2021/04/Guide-lines-for-visitor.jpg" alt="Avatar" id="patient-guide-img0" style={{width:"100%"}}/>
+  <div class="containerrr">
+  <Link style={{textDecoration:"none"}}><h4><b>VISITOR'S CARD</b></h4></Link>
+    
+  </div>
+</div>
+
+<div class="card-patient-guide1">
+  <img src="https://3.imimg.com/data3/GQ/EM/MY-8963348/ambulance-services-500x500.jpg" alt="Avatar" id="patient-guide-img1" style={{width:"100%"}}/>
+  <div class="container1">
+  <Link style={{textDecoration:"none"}}> <h4><b>AMBULANCE SERVICE</b></h4></Link>
+ 
+  </div>
+</div>
+
+<div class="card-patient-guide2">
+  <img src="https://www.khandakahospital.co.in/themes/img/admit.jpg" alt="Avatar" id="patient-guide-img2" style={{width:"100%"}}/>
+  <div class="container2">
+  <Link style={{textDecoration:"none"}}><h4><b>ADMISSION PROCEDURE</b></h4></Link>
+  
+  </div>
+</div>
+
+<div class="card-patient-guide3">
+  <img src="https://lh3.googleusercontent.com/proxy/r3i1FBI6FlNWm9FsD17DkSX13dFL-Oscj9KBLrr4A6LpqwxwoV1gdzFBFhES3XdUTC6wSuYfAJAfyMXUbr9WYUwF8Z2MytY2gfBkI4Oni4NbKgPwft7LKmFE" alt="Avatar" id="patient-guide-img3" style={{width:"100%"}}/>
+  <div class="container3">
+  <Link style={{textDecoration:"none"}}><h4><b>HOSPITAL FACILITIES</b></h4> </Link>
+  
+  </div>
+</div>
+
+<div class="card-patient-guide4">
+  <img src="https://www.gethealthystayhealthy.com/sites/default/files/styles/article_image_default/public/2019-04/hospital-discharge.jpg?itok=Rk6yw_z1" alt="Avatar" id="patient-guide-img4" style={{width:"100%"}}/>
+  <div class="container4">
+   <Link style={{textDecoration:"none"}}><h4><b>DISCHARGE</b></h4></Link> 
+   
+  </div>
+</div>
 
 
 
-
-
-
-
-
-
-
-
-
-
-            <footer class="footer-section-room">
+<footer class="footer-section">
         <div class="containerfooter">
-            <div class="footer-ctar pt-5 pb-5">
+            <div class="footer-cta pt-5 pb-5">
                 <div class="row">
                     <div class="col-xl-4 col-md-4 mb-30">
-                        <div class="single-ctar">
+                        <div class="single-cta">
                             <i class="fas fa-map-marker-alt"></i>
                             <div class="cta-text">
                                 <h4>Find us</h4>
@@ -101,7 +129,7 @@ function RoomCategories(){
                         </div>
                     </div>
                     <div class="col-xl-4 col-md-4 mb-30">
-                        <div class="single-ctar">
+                        <div class="single-cta">
                             <i class="fas fa-phone"></i>
                             <div class="cta-text">
                                 <h4>Call us</h4>
@@ -110,7 +138,7 @@ function RoomCategories(){
                         </div>
                     </div>
                     <div class="col-xl-4 col-md-4 mb-30">
-                        <div class="single-ctar">
+                        <div class="single-cta">
                             <i class="far fa-envelope-open"></i>
                             <div class="cta-text">
                                 <h4>Mail us</h4>
@@ -189,7 +217,7 @@ function RoomCategories(){
                                 <li><a href="#">Terms</a></li>
                                 <li><a href="#">Privacy</a></li>
                                 <li><a href="#">Policy</a></li>
-                                <li><a href="#">Contact</a></li>
+                                <li><a href="#" style={{paddingRight:'20px'}}>Contact</a></li>
                             </ul>
                         </div>
                     </div>
@@ -197,17 +225,8 @@ function RoomCategories(){
             </div>
         </div>
     </footer>
+      </div>
 
-
-
-
-
-
-
-
-</div>
-
-        )
-
+)
 }
-export default RoomCategories;
+export default InpatientGuide

@@ -4,10 +4,10 @@ import Mailto from 'react-protected-mailto'
 import './Aboutus.css'
 
 function AboutUs() {
-    // const myFunction = () => {
-    //     document.getElementById("myDropdown").classList.toggle("show");
+     const myFunction = () => {
+        document.getElementById("myDropdown").classList.toggle("show");
 
-    // }
+     }
 
     if (true) {
         var dropdowns = document.getElementsByClassName("dropdown-content");
@@ -41,12 +41,12 @@ function AboutUs() {
 
             <div class="backhome"></div>
             <div className="backhome-text">
-                <h3 id="aboutus">About Us</h3>
+                <h3 id="aboutus" style={{marginTop:"10px"}}>About Us</h3>
                 <Link to="/" id="homelink"><h3>Home<span id="greaterthan"> {'>'} </span></h3> </Link>
-                <h3 id="abouttext">About Us</h3>
+                <h3 id="abouttext" style={{marginTop:"50px", marginLeft:"170px"}}>About Us</h3>
             </div>
 
-            {/* <div class="Side-Toggle-Bar" id="Side-Toggle-Bar">
+            <div class="Side-Toggle-Bar" id="Side-Toggle-Bar" style={{marginTop:"190px"}}>
 
                 <div class="dropdown">
 
@@ -57,10 +57,10 @@ function AboutUs() {
                         <Link to="#" id="aboutuss">ABOUT US</Link>
                         <Link to="#" id="speciality">SPECIALITY</Link>
                         <Link to="#" id="pathology" >PATHOLOGY</Link>
-                        <Link to="#" id="consultation">CONSULTATION</Link>
+                        <Link to="#" id="consultation">APPOINTMENT</Link>
                     </div>
                 </div>
-            </div> */}
+            </div>
 
             <div className="chairman-message-text" style={{ textAlign: 'center', marginTop: '300px' }}>
                 <h1>Chairman's Message</h1>
@@ -69,7 +69,7 @@ function AboutUs() {
 
             <section className="chairman-message">
                 <div className="chairman-message-image" style={{ marginTop: '300px' }}>
-                    <img src="https://www.cdc.gov/nchs/images/covid19/nhcs/encounters.jpg" style={{ height: '450px', width: '500px', marginTop: '-270px' }} />
+                    <img src="https://www.cdc.gov/nchs/images/covid19/nhcs/encounters.jpg" style={{ height: '450px', width: '700px', marginTop: '-270px',marginLeft:"20px" }} />
                 </div>
 
                 <div style={{ padding: '20px', marginTop: '80px', marginLeft: '-105px' }}>
@@ -86,7 +86,7 @@ function AboutUs() {
 
             <section className="first">
                 <div>
-                    <img src="https://cdn.apollohospitals.com/dev-apollohospitals/2021/04/internationalpatientcare.jpg" style={{ height: '480px', width: '650px' }} alt="pic1" />
+                    <img src="https://cdn.apollohospitals.com/dev-apollohospitals/2021/04/internationalpatientcare.jpg" style={{ height: '480px', width: '750px', marginLeft:"20px"}} alt="pic1" />
                 </div>
 
                 <div style={{ padding: '20px' }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste est corrupti laudantium molestiae. Saepe
@@ -113,13 +113,13 @@ function AboutUs() {
                 </div>
 
                 <div>
-                    <img src="http://www.sevenhillshospital.com/images/medium/sevenhills-consultants.jpg" style={{ height: '520px', width: '698px', marginTop: '-30px' }} alt="pic1" />
+                    <img src="http://www.sevenhillshospital.com/images/medium/sevenhills-consultants.jpg" style={{ height: '520px', width: '790px', marginTop: '-30px', marginRight:"20px" }} alt="pic1" />
                 </div>
             </section>
 
             <section className="first" style={{ marginTop: '5px' }}>
                 <div >
-                    <img src="https://cdn.apollohospitals.com/dev-apollohospitals/2021/04/internationalpatientcare.jpg" style={{ height: '510px', width: '650px', marginTop: '-5px' }} alt="pic1" />
+                    <img src="https://cdn.apollohospitals.com/dev-apollohospitals/2021/04/internationalpatientcare.jpg" style={{ height: '510px', width: '750px', marginTop: '-5px' ,marginLeft:"20px" }} alt="pic1" />
                 </div>
 
                 <div style={{ padding: '20px' }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste est corrupti laudantium molestiae. Saepe
@@ -148,7 +148,7 @@ function AboutUs() {
                 </div>
 
                 <div>
-                    <img src="http://www.sevenhillshospital.com/images/medium/sevenhills-consultants.jpg" style={{ height: '500px', width: '698px', marginTop: '-30px' }} alt="pic1" />
+                    <img src="http://www.sevenhillshospital.com/images/medium/sevenhills-consultants.jpg" style={{ height: '500px', width: '798px', marginTop: '-30px', marginRight:"11px" }} alt="pic1" />
                 </div>
             </section>
 
@@ -176,7 +176,7 @@ function AboutUs() {
 
             <section className="technology">
                 <div>
-                    <img src="https://images.unsplash.com/photo-1538108149393-fbbd81895907?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aG9zcGl0YWx8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80" style={{ height: '500px', width: '680px' }} />
+                    <img src="https://images.unsplash.com/photo-1538108149393-fbbd81895907?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aG9zcGl0YWx8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80" style={{ height: '500px', width: '780px', marginTop:"30px", marginLeft:"20px"}} />
                 </div>
                 <div style={{ padding: '30px' }}> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste est corrupti laudantium molestiae. Saepe
                 dolorum inventore, quisquam neque voluptate maiores consequuntur expedita rerum explicabo laborum, fugiat
@@ -201,11 +201,11 @@ function AboutUs() {
         </div>
 
                 <div>
-                    <img src="http://www.snuh.org/upload/board/DF/b284b2a4a3ad4425ae0a6839bd54b1a9.jpg" style={{ height: '520px', width: '670px' }} />
+                    <img src="http://www.snuh.org/upload/board/DF/b284b2a4a3ad4425ae0a6839bd54b1a9.jpg" style={{ height: '520px', width: '770px', marginRight:"9px" }} />
                 </div>
             </section>
 
-            <div className="mission-text">
+            <div className="mission-text" style={{marginTop:"30px"}}>
                 <h1>Mission</h1>
             </div>
 

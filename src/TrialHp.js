@@ -106,7 +106,7 @@ toggle between hiding and showing the dropdown content */
               <Link to="/AboutUs" id="aboutuss">ABOUT US</Link>
               <Link to="#" id="speciality">SPECIALITY</Link>
               <Link to="#" id="pathology" >PATHOLOGY</Link>
-              <Link to="#" id="consultation">CONSULTATION</Link>
+              <Link to="#" id="consultation">APPOINTMENT</Link>
             </div>
           </div>
         </div>
@@ -141,7 +141,7 @@ toggle between hiding and showing the dropdown content */
   
         <div class="card" width= "100px">
   <div class="card-body">
-  <Link style={{textDecoration:"none", color:"black"}} to="/TeleConsultation" class="card-link"> <i class="fas fa-laptop-medical fa-5x" id="tele-icon"></i><h5 id="tele-link" style={{display:"block", marginTop:"-10px", marginLeft:"10px"}}>TELE-CONSULTATION</h5></Link>
+  <Link style={{textDecoration:"none", color:"black"}} to="/Pathology" class="card-link"> <i class="fas fa-vial fa-5x" id="path-icon"></i><h5 id="tele-link" style={{display:"block", marginTop:"-10px", marginLeft:"50px"}}>PATHOLOGY</h5></Link>
   </div>
 </div>
 
@@ -158,7 +158,7 @@ toggle between hiding and showing the dropdown content */
 </div>
 <div class="card" width= "100px">
   <div class="card-body">
-  <Link style={{textDecoration:"none", color:"black"}} to="/Query" class="card-link"> <i class="fas fa-question-circle fa-5x" id="query-icon"></i><h5 id="query-link" style={{display:"block", marginTop:"-10px", marginLeft:"40px"}}>POST-A-QUERY</h5></Link>
+  <Link style={{textDecoration:"none", color:"black"}} to="/PatientQuery" class="card-link"> <i class="fas fa-question-circle fa-5x" id="query-icon"></i><h5 id="query-link" style={{display:"block", marginTop:"-10px", marginLeft:"40px"}}>POST-A-QUERY</h5></Link>
   </div>
 </div>
 

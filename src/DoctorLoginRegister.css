@@ -354,11 +354,11 @@ opacity: 1;
       color: black;
   } */
   
-  .login-container-doctor #udiv,#pdiv{
+  .login-container-doctor #udiv,#pdiv,#qdiv,#ndiv{
       margin-bottom: 20px;
   }
   
-  .login-container-doctor #dtext, #ptext{
+  .login-container-doctor #dtext, #ptext,#qtext,#ntext{
       width: 100%;
       border: none;
       outline: none;
