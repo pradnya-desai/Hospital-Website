@@ -1,135 +1,180 @@
-import React from 'react'
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom'
+import './OurDoctors.css'
 import Mailto from 'react-protected-mailto'
-import './PatientQuery.css' 
-import PatientServices from './Services/PatientServices';
-import { useState } from 'react';
-function PatientQuery(props){
 
+function OurDoctors(){
     const myFunction = () => {
         document.getElementById("myDropdown").classList.toggle("show");
-
-     }
-
-    if (true) {
+    
+      }
+    const openNav=()=> {
+        document.getElementById("myNav").style.height = "100%";
+      }
+      
+      const closeNav=()=> {
+        document.getElementById("myNav").style.height = "0%";
+      }
+    
+      if(true) {
         var dropdowns = document.getElementsByClassName("dropdown-content");
         var i;
         for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-            }
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
         }
-    }
-
-
-const QueryObj={
-name:'',
-emailid:'',
-phonenumber:'',
-query:''
-}
-
-const[postQuery,setQuery]=useState(QueryObj)
-
-const handleChange=(event)=>{
-    setQuery({...postQuery,[event.target.name]:event.target.value})
-}
-
-const handleSubmit=(e)=>{
-    e.preventDefault();
-    console.log(postQuery);
-
-    PatientServices.addPatientQuery(postQuery).then(res=>{
-        if(res.status==200){
-            alert("Query Sent. We will get back to you shortly")
-        }
-        // props.history.push('/PatientQuery')
-    })
-    postQuery.name='';
-      postQuery.phonenumber='';
-        postQuery.emailid='';
-        postQuery.query='';
-}
-
-
-
-
+      }
     return(
         <div>
 
 <div class="navbar">
-                <button type="button" id="phonenobtn1">
-                    <img
-                        id="callicon"
-                        src="https://images.vexels.com/media/users/3/137415/isolated/preview/0e475bb9b17b3fa4f94f31fba1635b8f-telephone-call-icon-logo-by-vexels.png"
-                    />
+          <button type="button" id="phonenobtn1">
+            <img
+              id="callicon"
+              src="https://images.vexels.com/media/users/3/137415/isolated/preview/0e475bb9b17b3fa4f94f31fba1635b8f-telephone-call-icon-logo-by-vexels.png"
+            />
             020252515151
           </button>
 
-                {/* <button type="button" id="phonenobtn2">
+          {/* <button type="button" id="phonenobtn2">
             <div class="slash">
               <b>/</b>
             </div>
             1234567892
           </button> */}
-            </div>
+        </div>
 
-            <div class="backhome"></div>
-            <div className="backhome-text">
-                <h3 id="aboutus" style={{marginTop:"10px"}}>Patient Query</h3>
-                <Link to="/" id="homelink"><h3>Home<span id="greaterthan"> {'>'} </span></h3> </Link>
-                <h3 id="abouttext" style={{marginTop:"50px", marginLeft:"170px"}}>Patient Query</h3>
-            </div>
+		
 
-            <div class="Side-Toggle-Bar" id="Side-Toggle-Bar" style={{marginTop:"180px"}}>
+		<div class="backhome"></div>
+        <div className="backhome-text">
+            <h3 id="aboutus" style={{marginTop:"10px"}}>Our Doctors</h3>
+            <Link to="/" id="homelink"><h3>Home<span id="greaterthan"> {'>'} </span></h3> </Link>
+            <h3 id="abouttext" style={{marginTop:"50px", marginLeft:"170px"}}>Our Doctors</h3>
+        </div>
+        {/* <div className="register-text">
+			<h1>Registation Form</h1>
+		</div> */}
 
-                <div class="dropdown">
+<div class="Side-Toggle-Bar" id="Side-Toggle-Bar" style={{marginTop:'185px'}}>
 
-                    <input type="image" src="https://img.icons8.com/fluent/2x/menu.png" onClick={myFunction} id="dropbtn" class="dropbtn" />
-                    <div id="myDropdown" class="dropdown-content">
+<div class="dropdown">
 
-                        <Link to="/ContactUs" class="active" id="contactus">CONTACT US</Link>
-                        <Link to="#" id="aboutuss">ABOUT US</Link>
-                        <Link to="#" id="speciality">SPECIALITY</Link>
-                        <Link to="#" id="pathology" >PATHOLOGY</Link>
-                        <Link to="#" id="consultation">APPOINTMENT</Link>
-                    </div>
-                </div>
-            </div>
+  <input type="image" src="https://img.icons8.com/fluent/2x/menu.png" onClick={myFunction} id="dropbtn" class="dropbtn" />
+  <div id="myDropdown" class="dropdown-content">
+    
+    <Link to="/ContactUs" class="active" id="contactus">CONTACT US</Link>
+    <Link to="/AboutUs" id="aboutuss">ABOUT US</Link>
+    <Link to="#" id="speciality">SPECIALITY</Link>
+    <Link to="#" id="pathology" >PATHOLOGY</Link>
+    <Link to="#" id="consultation">APPOINTMENT</Link>
+  </div>
+</div>
+</div>
 
 
-            <div id="postaquery-background">
-                    <img src="https://dev.dropinternational.org/wp-content/uploads/2017/08/Telemedicine-1920x1080.jpg" id="image-postaquery" />
-                    
-                    <div class="login-container-doctor" style={{marginTop:'-280px',marginLeft:'-380px',boxShadow: '0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%)',height:'440px'}}>
-       
-       <form id="log-in-doctor" onSubmit={handleSubmit} style={{marginTop:'-40px'}}>
-       <div id="namediv">
-              <label id="qid"></label>
-              <input type="text" id="ntext" name="name" value={postQuery.name} onChange={handleChange} placeholder="Enter your name here"  />
-           </div>
-           <div id="udiv">
-               <label id="uid"></label>
-               <input type="text" id="dtext" name="emailid" value={postQuery.emailid} onChange={handleChange} placeholder="Enter your email-id here" style={{color:'white',marginTop:'10px'}} />
-           </div>
-           <div id="pdiv" style={{marginTop:'-40px'}}>
-               <label id="pid"></label>
-               <input type="text" id="ptext" name="phonenumber" value={postQuery.phonenumber} onChange={handleChange} placeholder="Enter your phone number here" style={{marginTop:'30px'}}  />
-           </div>
-           <div id="querydiv" >
-              {/* <label id="qid">Your Query</label> */}
-              <input type="text" id="qtext" name="query" value={postQuery.query} onChange={handleChange} placeholder="Enter your query here" style={{marginTop:'30px'}}  />
-           </div>
-           <input type="submit" id="dsubmit" name="postaquery" value="Post Your Query" style={{marginTop:'40px'}}/>
-          
-           <a id="fpwd" href="#">Forgot Password?</a>
-            {/* <a href="modifiedhomepagespiceup.html"><button type="button" id="backbtn" width="100px"  style={{float: 'left', marginTop: '-10px'}}>BACK</button></a> */}
-       </form>
-       </div>
-                </div>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://images.theconversation.com/files/304957/original/file-20191203-66986-im7o5.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop" alt="Avatar" style={{width:"300px", height:"300px"}}/>
+    </div>
+    <div class="flip-card-back">
+      <h1>John Doe</h1> 
+      <p>Architect & Engineer</p> 
+      <p>We love that guy</p>
+    </div>
+  </div>
+</div>
 
-                <footer class="footer-section">
+
+<div class="flip-card1">
+  <div class="flip-card-inner1">
+    <div class="flip-card-front1">
+      <img src="https://media.istockphoto.com/photos/doctor-holding-digital-tablet-at-meeting-room-picture-id1189304032?k=6&m=1189304032&s=612x612&w=0&h=SJPF2M715kIFAKoYHGbb1uAyptbz6Tn7-LxPsm5msPE=" alt="Avatar" style={{width:"300px", height:"300px"}}/>
+    </div>
+    <div class="flip-card-back1">
+      <h1>John Doe</h1> 
+      <p>Architect & Engineer</p> 
+      <p>We love that guy</p>
+    </div>
+  </div>
+</div>
+
+<div class="flip-card2">
+  <div class="flip-card-inner2">
+    <div class="flip-card-front2">
+      <img src="https://post.medicalnewstoday.com/wp-content/uploads/2019/01/Male_Doctor_732x549-thumbnail.jpg" alt="Avatar" style={{width:"300px", height:"300px"}}/>
+    </div>
+    <div class="flip-card-back2">
+      <h1>John Doe</h1> 
+      <p>Architect & Engineer</p> 
+      <p>We love that guy</p>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="flip-card3">
+  <div class="flip-card-inner3">
+    <div class="flip-card-front3">
+      <img src="https://i.pinimg.com/564x/a5/b2/6b/a5b26b335cc94272b7c1878ec5b13dbd.jpg" alt="Avatar" style={{width:"300px", height:"300px"}}/>
+    </div>
+    <div class="flip-card-back3">
+      <h1>John Doe</h1> 
+      <p>Architect & Engineer</p> 
+      <p>We love that guy</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<div class="flip-card4">
+  <div class="flip-card-inner4">
+    <div class="flip-card-front4">
+      <img src="https://cdn.sanity.io/images/0vv8moc6/hcplive/0ebb6a8f0c2850697532805d09d4ff10e838a74b-200x200.jpg" alt="Avatar" style={{width:"300px", height:"300px"}}/>
+    </div>
+    <div class="flip-card-back4">
+      <h1>John Doe</h1> 
+      <p>Architect & Engineer</p> 
+      <p>We love that guy</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="flip-card5">
+  <div class="flip-card-inner5">
+    <div class="flip-card-front5">
+      <img src="https://image.freepik.com/free-photo/beautiful-young-female-doctor-looking-camera-office_1301-7807.jpg" alt="Avatar" style={{width:"300px", height:"300px"}}/>
+    </div>
+    <div class="flip-card-back5">
+      <h1>John Doe</h1> 
+      <p>Architect & Engineer</p> 
+      <p>We love that guy</p>
+    </div>
+  </div>
+</div>
+
+<div class="flip-card6">
+  <div class="flip-card-inner6">
+    <div class="flip-card-front6">
+      <img src="https://www.explorethespaceshow.com/wp-content/uploads/2020/04/Mike-e1587102569285.png" alt="Avatar" style={{width:"300px", height:"300px"}}/>
+    </div>
+    <div class="flip-card-back6">
+      <h1>John Doe</h1> 
+      <p>Architect & Engineer</p> 
+      <p>We love that guy</p>
+    </div>
+  </div>
+</div>
+
+<footer class="footer-section">
         <div class="containerfooter">
             <div class="footer-cta pt-5 pb-5">
                 <div class="row">
@@ -239,12 +284,7 @@ const handleSubmit=(e)=>{
             </div>
         </div>
     </footer>
-
-
-
-
-
             </div>
     )
 }
-export default PatientQuery
+export default OurDoctors

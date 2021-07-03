@@ -7,6 +7,7 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 import Mailto from 'react-protected-mailto'
 import './TrialHp.css'
+import Toast from './Toast'
 class TrialHp extends React.Component {
  
   /* When the user clicks on the button,
@@ -48,8 +49,16 @@ toggle between hiding and showing the dropdown content */
 // z.style.left="0px";
 }
 
+componentDidMount=()=>{
+  // <Toast/>
+}
 
 
+ closeToast=()=>{
+  var t;
+     t=document.getElementsByClassName("alert").value
+       t.style.display="none";
+}
 
   render() {
 
@@ -78,7 +87,7 @@ toggle between hiding and showing the dropdown content */
             height="310px"
             width="310px"
           />
-          <h3>HealthCare Multispeciality Hospital</h3>
+          <h3 id="healthcare-text">HealthCare Multispeciality Hospital</h3>
           {/* <h4>Advanced Care in all Areas</h4> */}
           <img
             src="https://www.sparrowonline.org/images/silver-jubilee.jpg"
@@ -110,7 +119,9 @@ toggle between hiding and showing the dropdown content */
             </div>
           </div>
         </div>
-
+         <div><Toast/>
+        </div> 
+   
 
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
@@ -135,7 +146,6 @@ toggle between hiding and showing the dropdown content */
         </div>
 
 <h2 style={{fontSize:"40px",fontFamily:"sans-serif",display:"inline-block",textShadow:"-2px -2px #1c55ac"}}><i class="fas fa-hand-point-right fa-2x"></i>USEFUL LINKS</h2>
-
 
 <div id="cardss">
   
@@ -443,6 +453,8 @@ toggle between hiding and showing the dropdown content */
                     </div>
                 </div>
             </div>
+    
+
             <div class="footer-content pt-5 pb-5">
                 <div class="row">
                     <div class="col-xl-4 col-lg-4 mb-50">

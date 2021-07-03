@@ -21,6 +21,8 @@ import DoctorLoginRegister from './DoctorLoginRegister';
  import PatientLoginRegister from './PatientLoginRegister';
  import PatientQuery from './PatientQuery';
 import InpatientGuide from './InpatientGuide';
+import Toast from './Toast'
+import OurDoctors from './OurDoctors';
 ReactDOM.render(
   <div>
    {/* <React.StrictMode>
@@ -41,6 +43,8 @@ ReactDOM.render(
           <Route exact path="/PatientQuery" component={PatientQuery}/>
           <Route exact path="/HealthInsurance" component={HealthInsurance}/>
           <Route exact path="/InpatientGuide" component={InpatientGuide}/>
+          <Route exact path="/Toast" component={Toast}/>
+          <Route exact path="/OurDoctors" component={OurDoctors}/>
 
 	      </Switch>
       </Router>
